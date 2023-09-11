@@ -28,13 +28,14 @@ def get_info():
 
     # Construct the original response JSON
     original_response = {
-        'Slack Name': Mr Mint,
-        'Current Day of the Week': Sunday,
-        'Current UTC Time': 2023-10-21T15:04:05Z,
-        'Track': backend,
-        'GitHub File URL': https://github.com/Mint-cc/Mr-mint/blob/main/main.py,
-        'GitHub Repo URL': https://github.com/Mint-cc/Mr-mint.git,
-        'Status Code': 200 }
+        'Slack Name': "Mr mint",
+        'Current Day of the Week': "Monday",
+        'Current UTC Time': "2023-09-11T04:58:01Z",
+        'Track': "backend",
+        'GitHub File URL': "https://github.com/Mint-cc/Mr-mint/blob/main/main.py",
+        'GitHub Repo URL': "https://github.com/Mint-cc/Mr-mint.git",
+        'Status Code': 200
+    }
 
     # Create a new dictionary with rearranged keys
     new_response = {
@@ -46,7 +47,7 @@ def get_info():
     "github_repo_url": original_response["GitHub Repo URL"],
     "status_code": original_response["Status Code"]
      }
-
+     
     # Convert the new_response dictionary to JSON
     new_response_json = json.dumps(new_response, indent=2)
 
