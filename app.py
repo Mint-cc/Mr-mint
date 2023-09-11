@@ -10,7 +10,7 @@ def get_info():
     current_day = datetime.datetime.now().strftime('%A')
     utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
     github_file_url = "https://github.com/Mint-cc/Mr-mint/blob/main/app.py"
-    github_repo_url = " https://github.com/Mint-cc/Mr-mint"
+    github_repo_url = "https://github.com/Mint-cc/Mr-mint/tree/main"
 
     response_data = {
         "slack_name": slack_name,
@@ -25,4 +25,4 @@ def get_info():
     return jsonify(response_data)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
